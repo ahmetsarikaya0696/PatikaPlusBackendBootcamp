@@ -1,2 +1,2 @@
 # Patika+ Backend Bootcamp
-Gerekli README.md dosyalarý her bir ödev için ayrý ayrý oluþturulmuþtur.
+The required readme.md files are created separately for each homework.
