@@ -4,6 +4,7 @@
     {
         public required string Name { get; set; }
         public required string Surname { get; set; }
+        public required DateTime BirthDate { get; set; }
         public bool IsStudent { get; set; }
         public bool IsTeacher => !IsStudent;
 
