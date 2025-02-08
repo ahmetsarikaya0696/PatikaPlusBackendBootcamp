@@ -1,0 +1,37 @@
+﻿@model CustomerOrderViewModel
+
+<div>
+    <div>
+        <strong>FirstName :</strong> @Model.Customer.FirstName
+    </div>
+    <div>
+        <strong>LastName :</strong> @Model.Customer.LastName
+    </div>
+    <div>
+        <strong>Email :</strong> @Model.Customer.Email
+    </div>
+
+    <div class="my-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>ProductName</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Orders)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.ProductName</td>
+                        <td>@order.Price</td>
+                        <td>@order.Quantity</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
